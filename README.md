@@ -21,6 +21,9 @@ Terdapat enam orang anggota pada kelompok ini dengan fraksi kontribusinya pada p
 
 ## Nomor 1
 ### Poin A
+
+Jawaban berikut akan lebih jelas dilihat dalam [editor](https://rawcdn.githack.com/dudung/jsxphys/4220729be109df8b94729ca4605562caa6d7596b/0.0.2/editor.html).
+
 	Dari sistem yang diketahui didapatkan diagram gaya bola pada sistem dan hubungan $\theta$, $x$, dan $y$, (skema terlampir).
 	<br /><br />
 	
@@ -93,6 +96,9 @@ Terdapat enam orang anggota pada kelompok ini dengan fraksi kontribusinya pada p
 ![alt text](https://user-images.githubusercontent.com/64627989/80790873-33f39200-8bba-11ea-9e19-bdd723a793b0.png)
 
 ### Poin B
+
+Jawaban berikut akan lebih jelas dilihat dalam [editor](https://rawcdn.githack.com/dudung/jsxphys/4220729be109df8b94729ca4605562caa6d7596b/0.0.2/editor.html).
+
 	Dari persamaan 9 dan 10 pada Poin A terdapat beberapa suku yang sama.
 	<br/><br/>
 	
@@ -111,6 +117,9 @@ Terdapat enam orang anggota pada kelompok ini dengan fraksi kontribusinya pada p
 	Suku ini menjelaskan adanya faktor hambatan atau viskositas $\eta$ yang muncul pada sistem.
 	
 ### Poin C
+
+Jawaban berikut akan lebih jelas dilihat dalam [editor](https://rawcdn.githack.com/dudung/jsxphys/4220729be109df8b94729ca4605562caa6d7596b/0.0.2/editor.html).
+
 	Pada kasus tanpa gaya hambatan maka nilai $\eta=0$. Sehingga ungkapan dari persamaan (9) dan (10) pada Poin A menjadi seperti berikut.
 	<br/><br/>
 	
@@ -129,6 +138,9 @@ Terdapat enam orang anggota pada kelompok ini dengan fraksi kontribusinya pada p
 	Terlihat bahwa kebergantungan sistem hanya karena percepatan sentripetal yang muncul akibat osilasi yang lintasannya melingkar.
 	
 ### Poin D
+
+Jawaban berikut akan lebih jelas dilihat dalam [editor](https://rawcdn.githack.com/dudung/jsxphys/4220729be109df8b94729ca4605562caa6d7596b/0.0.2/editor.html).
+
 	Untuk kasus tanpa hambatan maka dapat digunakan persamaan (1) dan (2) pada Poin C untuk persamaan gerak sistem. Sedangkan untuk penggunaan simpangan kecil maka terdapat aproksimasi yang digunakan yaitu $y=l$ dan $x{\ll}l$. Sehingga persamaan (1) dan (2) pada Poin C dapat ditulis sebagai berikut.
 	<br/><br/>
 	
@@ -145,6 +157,9 @@ Terdapat enam orang anggota pada kelompok ini dengan fraksi kontribusinya pada p
 	\end{equation}
 ## Nomor 2
 ### Poin A
+
+Jawaban berikut akan lebih jelas dilihat dalam [editor](https://rawcdn.githack.com/dudung/jsxphys/4220729be109df8b94729ca4605562caa6d7596b/0.0.2/editor.html).
+
 	Pada koordinat polar maka diagram gaya digambarkan seperti pada skema, (skema terlampir).
 
 	<br/><br/>
@@ -169,6 +184,9 @@ Terdapat enam orang anggota pada kelompok ini dengan fraksi kontribusinya pada p
 ![alt text](https://user-images.githubusercontent.com/64627989/80791604-5be3f500-8bbc-11ea-8d4d-3e07aef2df41.png)
 
 ### Poin B
+
+Jawaban berikut akan lebih jelas dilihat dalam [editor](https://rawcdn.githack.com/dudung/jsxphys/4220729be109df8b94729ca4605562caa6d7596b/0.0.2/editor.html).
+
 	Untuk nilai $\theta$ kecil maka dapat dilakukan aproksimasi nilai sebagai beirikut.
 
 	\begin{equation}
