@@ -59,7 +59,7 @@
 Lampiran :
 1. Diagram gaya sistem pada koordinat kartesian.
 
-![alt text](https://user-images.githubusercontent.com/64627989/80784611-d6564a00-8ba7-11ea-81f1-9cb90b70ff9b.png)
+![alt text](https://user-images.githubusercontent.com/64627989/80787799-b4fa5b80-8bb1-11ea-9825-1e587f601e5c.png)
 
 2. Hubungan sudut dengan koordinat kartesian
 
