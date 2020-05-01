@@ -56,7 +56,7 @@
 	\\y''-gcos^2{\theta}-\frac{(\sqrt{x'^2+y'^2})^2}{l}cos{\theta}+\frac{(3{\eta}{\pi}D)}{m}y'=-g
 	\\y''-g\frac{y^2}{l^2}-\frac{1}{l^2}(x'^2+y'^2)y+\frac{(3{\eta}{\pi}D)}{m}y'=-g
 	\end{equation}
-Lampiran :
+**Lampiran :**
 1. Diagram gaya sistem pada koordinat kartesian.
 
 ![alt text](https://user-images.githubusercontent.com/64627989/80787799-b4fa5b80-8bb1-11ea-9825-1e587f601e5c.png)
