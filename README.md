@@ -1,11 +1,23 @@
-# Berkas Ujian FI3201 Fisika Komputasi
-## Anggota Kelompok
-1. M Luthfi Aditya / 10217022
-2. Muhammad Tegar Pambudi / 10217025
-3. Ahmad Al Ghiffari / 10217047
-4. Irsan Ferdian A S / 10217074
-5. Larolina K / 10217077
-6. Muhri Ihza / 10217086
+# Ujian kelompok
+
+## Anggota
+Terdapat enam orang anggota pada kelompok ini dengan fraksi kontribusinya pada pengerjaan tiap soal dapat dilihat dalam tabel berikut.
+
+| NIM      | Nama                  | Peran pada soal (dan fraksi kontribusinya)   |
+|----------|-----------------------|----------------------------------------------|
+|          |                       |                                              |
+| 10217022 | Panglima Einstein III | 1 (0.10) 2 (0.00) 3 (0.20) 4 (0.30) 5 (0.16) |
+| 10217025 | Teman Maxwell Jr.     | 1 (0.20) 2 (0.00) 3 (0.20) 4 (0.30) 5 (0.17) |
+| 10217047 | Densitas Kanonika     | 1 (0.10) 2 (0.00) 3 (0.20) 4 (0.30) 5 (0.16) |
+| 10217074 | Dualisma Singulariadi | 1 (0.20) 2 (0.00) 3 (0.00) 4 (0.10) 5 (0.17) |
+| 10217077 | Antrodinamika Laten   | 1 (0.20) 2 (0.50) 3 (0.20) 4 (0.00) 5 (0.17) |
+| 10217086 | Ergodik Kekal Tunak   | 1 (0.20) 2 (0.50) 3 (0.20) 4 (0.00) 5 (0.17) |
+|          |                       |                                              |
+|          | Total                 | 1 (1.00) 2 (1.00) 3 (1.00) 4 (1.00) 5 (1.00) |
+
+
+
+# Jawaban
 
 ## Nomor 1
 ### Poin A
@@ -80,7 +92,7 @@
 
 ![alt text](https://user-images.githubusercontent.com/64627989/80790873-33f39200-8bba-11ea-9e19-bdd723a793b0.png)
 
-## Poin B
+### Poin B
 	Dari persamaan 9 dan 10 pada Poin A terdapat beberapa suku yang sama.
 	<br/><br/>
 	
@@ -98,7 +110,7 @@
 	<br/><br/>
 	Suku ini menjelaskan adanya faktor hambatan atau viskositas $\eta$ yang muncul pada sistem.
 	
-## Poin C
+### Poin C
 	Pada kasus tanpa gaya hambatan maka nilai $\eta=0$. Sehingga ungkapan dari persamaan (9) dan (10) pada Poin A menjadi seperti berikut.
 	<br/><br/>
 	
@@ -116,7 +128,7 @@
 	
 	Terlihat bahwa kebergantungan sistem hanya karena percepatan sentripetal yang muncul akibat osilasi yang lintasannya melingkar.
 	
-## Poin D
+### Poin D
 	Untuk kasus tanpa hambatan maka dapat digunakan persamaan (1) dan (2) pada Poin C untuk persamaan gerak sistem. Sedangkan untuk penggunaan simpangan kecil maka terdapat aproksimasi yang digunakan yaitu $y=l$ dan $x{\ll}l$. Sehingga persamaan (1) dan (2) pada Poin C dapat ditulis sebagai berikut.
 	<br/><br/>
 	
@@ -131,8 +143,8 @@
 	\begin{equation}
 	\\y''+\frac{x'^2+y'^2}{l}=0
 	\end{equation}
-# Nomor 2
-## Poin A
+## Nomor 2
+### Poin A
 	Pada koordinat polar maka diagram gaya digambarkan seperti pada skema, (skema terlampir).
 
 	<br/><br/>
@@ -156,7 +168,7 @@
 
 ![alt text](https://user-images.githubusercontent.com/64627989/80791604-5be3f500-8bbc-11ea-8d4d-3e07aef2df41.png)
 
-## Poin B
+### Poin B
 	Untuk nilai $\theta$ kecil maka dapat dilakukan aproksimasi nilai sebagai beirikut.
 
 	\begin{equation}
@@ -183,4 +195,4 @@
 	{\theta}'^2+\frac{g}{l}=\frac{T}{ml}
 	\end{equation}
 
-## Poin C
+### Poin C
