@@ -74,7 +74,7 @@
 **Lampiran :**
 1. Diagram gaya sistem pada koordinat kartesian.
 
-![alt text](https://user-images.githubusercontent.com/64627989/80787799-b4fa5b80-8bb1-11ea-9825-1e587f601e5c.png)
+![alt text](https://user-images.githubusercontent.com/64627989/80791365-9e590200-8bbb-11ea-80da-92c7efd41c1a.png)
 
 2. Hubungan sudut dengan koordinat kartesian
 
