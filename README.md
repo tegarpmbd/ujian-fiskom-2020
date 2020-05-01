@@ -321,6 +321,117 @@ int main()
 
 ## Nomor 4 | Algoritma Genetik Sederhana dengan JS
 
+### Poin A
+```javascript
+/*
+	ga.js
+	Simple genetic algoritm (GA)
+	
+	Sparisoma Viridi | https://github.com/dudung/jsxPhys
+	
+	20200501
+	1255 Create this program.
+	1318 Cancel the use of online compiler [1].
+	
+	Refrences
+	1. https://jsconsole.com/ [20200501]
+*/
+
+
+// Execute main funtion
+main();
+
+
+// Define main function
+function main() {
+	var p = "0010110";
+	var xy, ys, gs;
+	
+	getValues(p);
+	
+}
+
+
+// Get interpretation of position and group from chromosome
+function getValues() {
+	p = arguments[0];
+	
+	xs = p.slice(0, 3);
+	ys = p.slice(3, 6);
+	gs = p.slice(6);
+	
+	console.log("p = ", p);
+	console.log("x = ", xs);
+	console.log("y = ", ys);
+	console.log("g = ", gs);
+	
+}
+```
+
+### Poin B
+
+```javascript
+/*
+	ga.js
+	Simple genetic algoritm (GA)
+	
+	Sparisoma Viridi | https://github.com/dudung/jsxPhys
+	
+	20200501
+	1255 Create this program.
+	1318 Cancel the use of online compiler [1].
+	
+	Refrences
+	1. https://jsconsole.com/ [20200501]
+*/
+
+
+// Execute main funtion
+main();
+
+
+// Define main function
+function main() {
+	var p = "0010110";
+	var x0, x, y0, y;
+	var dr, val;
+	
+	getValues(p);
+	fitness(p);
+	
+}
+
+
+// Get interpretation of position and group from chromosome
+function getValues() {
+	p = arguments[0];
+	
+	x0 = p.slice(0, 1);
+	x = p.slice(1, 2);
+	y0 = p.slice(3, 4);
+	y = p.slice(4, 5);
+	
+	console.log("x0 = ", x0);
+	console.log("x = ", x);
+	console.log("y0 = ", y0);
+	console.log("y = ", y);
+	
+}
+
+// Create fitness function
+function fitness() {
+	p = arguments[0];
+	
+	dr = Math.sqrt(Math.pow(x-x0, 2) + Math.pow(y-y0, 2));
+	
+	val = 1 / (1 + dr);
+	
+	console.log("dr = ", dr);
+	console.log("val = ", val);
+	
+}
+```
+
 ## Nomor 5 | Research Based Learning
 ### a Tujuan
 ### b Rumusan Masalah
