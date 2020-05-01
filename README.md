@@ -79,6 +79,7 @@
 2. Hubungan sudut dengan koordinat kartesian
 
 ![alt text](https://user-images.githubusercontent.com/64627989/80790873-33f39200-8bba-11ea-9e19-bdd723a793b0.png)
+
 ## Poin B
 	Dari persamaan 9 dan 10 pada Poin A terdapat beberapa suku yang sama.
 	<br/><br/>
@@ -96,6 +97,7 @@
 	3. Suku $3{\eta}{\pi}D/m$
 	<br/><br/>
 	Suku ini menjelaskan adanya faktor hambatan atau viskositas $\eta$ yang muncul pada sistem.
+	
 ## Poin C
 	Pada kasus tanpa gaya hambatan maka nilai $\eta=0$. Sehingga ungkapan dari persamaan (9) dan (10) pada Poin A menjadi seperti berikut.
 	<br/><br/>
@@ -113,6 +115,7 @@
 	\end{equation}
 	
 	Terlihat bahwa kebergantungan sistem hanya karena percepatan sentripetal yang muncul akibat osilasi yang lintasannya melingkar.
+	
 ## Poin D
 	Untuk kasus tanpa hambatan maka dapat digunakan persamaan (1) dan (2) pada Poin C untuk persamaan gerak sistem. Sedangkan untuk penggunaan simpangan kecil maka terdapat aproksimasi yang digunakan yaitu $y=l$ dan $x{\ll}l$. Sehingga persamaan (1) dan (2) pada Poin C dapat ditulis sebagai berikut.
 	<br/><br/>
@@ -148,9 +151,36 @@
 	\\{\theta}'^2+\frac{g}{l}cos{\theta}=\frac{T}{ml}
 	\end{equation}
 
-**Lampiran : **
+**Lampiran :**
 1. Diagram gaya sistem pada koordinat kartesian.
 
 ![alt text](https://user-images.githubusercontent.com/64627989/80791604-5be3f500-8bbc-11ea-8d4d-3e07aef2df41.png)
 
 ## Poin B
+	Untuk nilai $\theta$ kecil maka dapat dilakukan aproksimasi nilai sebagai beirikut.
+
+	\begin{equation}
+	sin{\theta}=\theta
+	\end{equation}
+
+
+	\begin{equation}
+	cos{\theta}=1
+	\end{equation}
+
+	Sehingga persamaan (1) dan (2) dari Poin A akan direduksi menjadi berikut.
+	<br/><br/>
+
+	Untuk sumbu $\theta$ :
+
+	\begin{equation}
+	{\theta}''+\frac{g}{l}{\theta}=0
+	\end{equation}
+
+	Untuk sumbu $r$ :
+
+	\begin{equation}
+	{\theta}'^2+\frac{g}{l}=\frac{T}{ml}
+	\end{equation}
+
+## Poin C
