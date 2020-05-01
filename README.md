@@ -433,70 +433,260 @@ g = 0
 ### Poin B
 
 ```javascript
-/*
-	ga.js
-	Simple genetic algoritm (GA)
-	
-	Sparisoma Viridi | https://github.com/dudung/jsxPhys
-	
-	20200501
-	1255 Create this program.
-	1318 Cancel the use of online compiler [1].
-	
-	Refrences
-	1. https://jsconsole.com/ [20200501]
-*/
-
+//nilai X0 dan Y0 dibuat = 111
 
 // Execute main funtion
 main();
 
+// Define main function
+function main() {
+    var p = "0010110";
+    [xs, ys, cs] = getValues(p);
+    var val = 1/(1+fitness(xs,ys));			
+    
+    console.log("p =", p);
+    console.log("x =", xs);
+    console.log("y =", ys);
+    console.log("kelas =", gs);
+    console.log("val = ", val);
+}
+
+function getValues() {
+    var p = arguments[0];
+    var xs = p.slice(0, 3);
+    var ys = p.slice(3, 6);
+    var gs = p.slice(6);
+    return [xs, ys, gs];
+}
+
+function fitness(a, b) {		
+  return(Math.sqrt(Math.pow((a - 111), 2) + Math.pow((b - 111),2)));
+}
+```
+
+Output dari program ini adalah sebagai berikut.
+
+```
+p = 0010110
+x = 001
+y = 011
+kelas = 0
+val = 0.006681781414235262
+```
+
+### Poin C
+
+```javascript
+// Execute main funtion
+main();
+// Define main function 
+function main() 
+{ 
+	var p = "1111101";		
+	var q = "1111011";
+	var r = "1011011";
+	var s = "1010110";
+	var t = "1010101";
+	var threshold= 0.5;
+  
+	[x1, y1, c1] = getValues(p); 
+	[x2, y2, c2] = getValues(q); 
+	[x3, y3, c3] = getValues(r); 
+	[x4, y4, c4] = getValues(s); 
+	[x5, y5, c5] = getValues(t); 
+
+	//Seleksi untuk Kromosom pertama (p)
+	var hasil1 = 1/(1+fitness(x1,y1));
+	var seleksi1 = selection(threshold, hasil1, p)
+		console.log("p =",p); 
+		console.log("x =",x1); 
+		console.log("y =",y1); 
+		console.log("kelas =",c1);
+		console.log("val = ",hasil1);
+		console.log("seleksi = ",p," ",  seleksi1);
+	
+	//Seleksi untuk kromosom kedua (q)
+	var hasil2 = 1/(1+fitness(x2,y2));
+	var seleksi2 = selection(threshold, hasil2, q)
+		console.log("q =",q); 
+		console.log("x =",x2); 
+		console.log("y =",y2); 
+		console.log("kelas =",c2); 
+		console.log("val = ",hasil2);
+		console.log("seleksi = ",q," ",  seleksi2);
+
+	//Seleksi untuk kromosom ketiga (r)
+	var hasil3 = 1/(1+fitness(x3,y3));
+	var seleksi3 = selection(threshold, hasil3, r)
+		console.log("r =",r); 	
+		console.log("x =",x3); 
+		console.log("y =",y3); 
+		console.log("kelas =",c3); 
+		console.log("val = ",hasil3);
+		console.log("seleksi = ",r," ",  seleksi3);
+
+	//seleksi kromosom keempat(s)
+	var hasil4 = 1/(1+fitness(x4,y4));
+	var seleksi4 = selection(threshold, hasil4, s)
+		console.log("s =",s); 
+		console.log("x =",x4); 
+		console.log("y =",y4); 
+		console.log("kelas =",c4); 
+		console.log("val = ",hasil4);
+		console.log("seleksi = ",s," ", seleksi4);
+
+	//seleksi untuk kromosom kelima
+	var hasil5 = 1/(1+fitness(x5,y5));
+	var seleksi5 = selection(threshold, hasil5, t)
+		console.log("t =",t); 
+		console.log("x =",x5); 
+		console.log("y =",y5); 
+		console.log("kelas =",c5); 
+		console.log("val = ",hasil5);
+		console.log("seleksi = ",t," ", seleksi5);
+}
+
+function getValues() 
+{ 
+	var p = arguments[0];
+	var xs = p.slice(0, 3); 
+	var ys = p.slice(3, 6); 
+	var cs = p.slice(6);
+
+	return [xs, ys, cs]; 
+}
+
+function fitness(a, b) 
+{ 
+	return(Math.sqrt(Math.pow((a - 111), 2) + Math.pow((b - 111),2))); 
+}
+
+function selection(threshold, a, p)           //fungsi untuk mengecek apakah nilai fitnessnya >= threshold
+{ 
+	if (a>=threshold) { result="lolos seleksi";
+	} else
+		{ result="tidak lolos seleksi"; }
+		
+return (result);
+}
+```
+
+Output dari program ini adalah sebagai berikut.
+
+```
+p = 1111101
+x = 111
+y = 110
+kelas = 1
+val = 0.5
+seleksi = 1111101	lolos seleksi
+
+q = 1111011
+x = 111
+y = 101
+kelas = 1
+val = 0.09090909090909091
+seleksi = 1111011	tidak lolos seleksi
+
+r = 1011011
+x = 101
+y = 101
+kelas = 1
+val = 0.06604088253131131
+seleksi = 1011011	tidak lolos seleksi
+
+s = 1010110
+x = 101
+y = 011
+kelas = 0
+val = 0.009852337480068215
+seleksi = 1010110	tidak lolos seleksi
+
+t = 1010101
+x = 101
+y = 010
+kelas = 1
+val = 0.009756683706576702
+seleksi = 1010101	tidak lolos seleksi
+```
+
+### Poin D
+
+```javascript
+//disini memakai referensi kromosom 1011101
+
+// Execute main funtion
+main();
 
 // Define main function
 function main() {
-	var p = "0010110";
-	var x0, x, y0, y;
-	var dr, val;
-	
-	getValues(p);
-	fitness(p);
-	
+    var p = "1011110";    
+    [xs, ys, cs] = getValues(p);
+    
+    var hasil = 1/(1+fitness(xs,ys));
+    console.log("p =",p);
+    console.log("x =",xs);
+    console.log("y =",ys);
+    console.log("c =",cs);
+    console.log("hasil = ",hasil);
+
 }
 
-
-// Get interpretation of position and group from chromosome
 function getValues() {
-	p = arguments[0];
-	
-	x0 = p.slice(0, 1);
-	x = p.slice(1, 2);
-	y0 = p.slice(3, 4);
-	y = p.slice(4, 5);
-	
-	console.log("x0 = ", x0);
-	console.log("x = ", x);
-	console.log("y0 = ", y0);
-	console.log("y = ", y);
-	
+    var p = arguments[0];
+
+    var xs = p.slice(0, 3);
+    var ys = p.slice(3, 6);
+    var cs = p.slice(6);
+
+    return [xs, ys, cs];
 }
 
-// Create fitness function
-function fitness() {
-	p = arguments[0];
-	
-	dr = Math.sqrt(Math.pow(x-x0, 2) + Math.pow(y-y0, 2));
-	
-	val = 1 / (1 + dr);
-	
-	console.log("dr = ", dr);
-	console.log("val = ", val);
-	
+function fitness(a, b) 
+{
+  return(Math.sqrt(Math.pow((a - 101), 2) + Math.pow((b - 110),2)));	
 }
 ```
+
+Output program dari beberapa kali iterasi adalah sebagai berikut.
+
+```
+p = 1011111
+x = 101
+y = 111
+c = 1
+hasil = 0.5
+```
+
+```
+p = 1111011
+x = 111
+y = 101
+c = 1
+hasil = 0.06918680026152062
+```
+
+```
+p = 1011000
+x = 101
+y = 100
+c = 0
+hasil = 0.09090909090909091
+```
+
+```
+p = 1011100
+x = 101
+y = 110
+c = 0
+hasil = 1
+```
+
+Dari hasil fitness beberapa iterasi kromosom didapat 2 kromosom yang paling mendekati dengan kromosom 1011101 adalah kromosom 1011100 dengan nilai fitness adalah 1, dan kromosom 1011111 dengan nilai fitness 0.5.
 
 ## Nomor 5 | Research Based Learning
 ### a Tujuan
 ### b Rumusan Masalah
 ### c Metode
 ### d Hasil dan Diskusi
-### Referensi
+### e Referensi
