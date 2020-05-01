@@ -129,3 +129,28 @@
 	\\y''+\frac{x'^2+y'^2}{l}=0
 	\end{equation}
 # Nomor 2
+## Poin A
+	Pada koordinat polar maka diagram gaya digambarkan seperti pada skema, (skema terlampir).
+
+	<br/><br/>
+
+	Pada sumbu $\theta$ :
+
+	\begin{equation}
+	\\m{\theta}''=-mgsin{\theta}
+	\\{\theta}''+\frac{g}{l}sin{\theta}=0
+	\end{equation}
+
+	Pada sumbu $r$ :
+
+	\begin{equation}
+	\\m{\theta}'^2l=T-mgcos{\theta}
+	\\{\theta}'^2+\frac{g}{l}cos{\theta}=\frac{T}{ml}
+	\end{equation}
+
+**Lampiran : **
+1. Diagram gaya sistem pada koordinat kartesian.
+
+![alt text](https://user-images.githubusercontent.com/64627989/80791604-5be3f500-8bbc-11ea-8d4d-3e07aef2df41.png)
+
+## Poin B
