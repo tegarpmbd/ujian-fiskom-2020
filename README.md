@@ -193,7 +193,6 @@ Jawaban berikut akan lebih jelas dilihat dalam [editor](https://rawcdn.githack.c
 	sin{\theta}=\theta
 	\end{equation}
 
-
 	\begin{equation}
 	cos{\theta}=1
 	\end{equation}
@@ -207,10 +206,54 @@ Jawaban berikut akan lebih jelas dilihat dalam [editor](https://rawcdn.githack.c
 	{\theta}''+\frac{g}{l}{\theta}=0
 	\end{equation}
 
+	Solusi umum dari persamaan (3) adalah sebagai berikut.
+
+	\begin{equation}
+	{\theta}(t) = Asin({\omega}t) + Bcos({\omega}t)
+	\end{equation}
+
+	Dengan kondisi awal simpangan yaitu pada saat $t=0$, $\theta=\theta_0$ maka solusi dapat diambil sebagai kasus initial value problem sebagai berikut.
+
+	\begin{equation}
+	{\theta}(0)={\theta}_0=B
+	\end{equation}
+
+	Sehingga solusi dari persamaan (3) adalah sebagai berikut.
+
+	\begin{equation}
+	{\theta}(t) = {\theta}_{0}cos({\omega}t)
+	\end{equation}
+
+	Dengan $\omega$ diungkapkan sebagai berikut.
+
+	\begin{equation}
+	{\omega} = \sqrt{\frac{g}{l}}
+	\end{equation}
+
 	Untuk sumbu $r$ :
 
 	\begin{equation}
 	{\theta}'^2+\frac{g}{l}=\frac{T}{ml}
+	\end{equation}
+
+	Turunan pertama dari $\theta_0$ terhadap waktu adalah sebagai berikut.
+
+	\begin{equation}
+	\frac{d\theta}{dt}={\theta}'=-{\omega}{\theta}_{0}sin({\omega}t)
+	\end{equation}
+
+	Dari persamaan (8) dan (9) didapatkan ungkapan untuk $T$ sebagai berikut.
+
+	\begin{equation}
+	\\T=ml(-{\omega}{\theta}_{0}sin({\omega}t)^2+\frac{g}{l})
+	\\T=ml({\omega}^2{\theta}^2_{0}sin^2({\omega}t)+\frac{g}{l})
+	\end{equation}
+
+	Dengan memasukkan nilai $\omega=g/l$ maka hasil persamaan (10) sebagai berikut.
+
+	\begin{equation}
+	\\T=ml(\frac{g}{l}{\theta}^2_{0}sin^2(\frac{g}{l}t)+\frac{g}{l})
+	\\T=mg({\theta}^2_{0}sin^2(\frac{g}{l}t)+1)
 	\end{equation}
 
 ### Poin C
