@@ -79,3 +79,15 @@
 	<br/><br/>
 	Suku ini menjelaskan adanya faktor hambatan atau viskositas $\eta$ yang muncul pada sistem.
 ## Poin C
+	Pada kasus tanpa gaya hambatan maka nilai $\eta=0$. Sehingga ungkapan dari persamaan (9) dan (10) pada Poin A menjadi seperti berikut.
+	<br/><br/>
+	Untuk sumbu $x$ :
+	\begin{equation}
+	\\x''-\frac{g}{l^2}xy-\frac{1}{l^2}(x'^2+y'^2)x=0
+	\end{equation}
+	Untuk sumbu $y$ :
+	\begin{equation}
+	\\y''-g\frac{y^2}{l^2}-\frac{1}{l^2}(x'^2+y'^2)y=-g
+	\end{equation}
+	Terlihat bahwa kebergantungan sistem hanya karena percepatan sentripetal yang muncul akibat osilasi yang lintasannya melingkar.
+## Poin D
