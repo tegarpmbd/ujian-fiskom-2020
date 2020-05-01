@@ -63,7 +63,7 @@
 
 2. Hubungan sudut dengan koordinat kartesian
 
-![alt text](https://user-images.githubusercontent.com/64627989/80785039-35688e80-8ba9-11ea-8bea-c9043693cabd.png)
+![alt text](https://user-images.githubusercontent.com/64627989/80790873-33f39200-8bba-11ea-9e19-bdd723a793b0.png)
 ## Poin B
 	Dari persamaan 9 dan 10 pada Poin A terdapat beberapa suku yang sama.
 	<br/><br/>
