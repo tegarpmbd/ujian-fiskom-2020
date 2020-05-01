@@ -11,12 +11,3 @@
 ### Poin A
 
 Lampiran :
-
-1. Diagram gaya sistem pada koordinat kartesian : 
-
-![alt text](https://github.com/tegarpmbd/ujian-fiskom-2020/issues/1#issue-610575124)
-### Poin B
-
-### Poin C
-
-### Poin D
