@@ -7,10 +7,10 @@ Terdapat enam orang anggota pada kelompok ini dengan fraksi kontribusinya pada p
 |----------|-----------------------|----------------------------------------------|
 |          |                       |                                              |
 | 10217022 | M. Luthfi Aditya	   | 1 (0.10) 2 (0.10) 3 (0.30) 4 (0.10) 5 (0.15) |
-| 10217025 | Muhammad Tegar P      | 1 (0.30) 2 (0.30) 3 (0.05) 4 (0.10) 5 (0.20) |
+| 10217025 | Muhammad Tegar P      | 1 (0.30) 2 (0.30) 3 (0.00) 4 (0.10) 5 (0.25) |
 | 10217047 | Ahmad Al Ghiffari     | 1 (0.30) 2 (0.30) 3 (0.05) 4 (0.10) 5 (0.15) |
 | 10217074 | Irsan Ferdian A S	   | 1 (0.10) 2 (0.10) 3 (0.30) 4 (0.10) 5 (0.15) |
-| 10217077 | Larolina K		   | 1 (0.10) 2 (0.10) 3 (0.25) 4 (0.10) 5 (0.20) |
+| 10217077 | Larolina K		   | 1 (0.10) 2 (0.10) 3 (0.30) 4 (0.10) 5 (0.15) |
 | 10217086 | Muhri Ihza		   | 1 (0.10) 2 (0.10) 3 (0.05) 4 (0.50) 5 (0.15) |
 |          |                       |                                              |
 |          | Total                 | 1 (1.00) 2 (1.00) 3 (1.00) 4 (1.00) 5 (1.00) |
@@ -687,7 +687,7 @@ Dari hasil fitness beberapa iterasi kromosom didapat 2 kromosom yang paling mend
 ## Nomor 5 | Research Based Learning
 ### a Tujuan
 
-Optimalisasi pemodelan pandemik berdasarkan model SIR dengan Artificial Neural Network.
+Optimalisasi pemodelan pandemik berdasarkan model SIR dengan Deep Neural Network.
 
 ### b Rumusan Masalah
 
@@ -707,9 +707,7 @@ Dunia sedang menghadapi masalah serius terkait adanya pandemik virus SARS-CoV-2 
 	
 	Dimana ${\beta}$ menunjukkan laju penyebaran dan ${\gamma}$ menunjukkan laju penyembuhan.
 
-Persamaan diferensial ini memiliki kelemahan yaitu karena sensitifitas parameternya menyebabkan kesalahan dalam penentuan nilai dapat menyebabkan kesalahan dalam melakukan prediksi [3]. Apalagi pada kondisi seperti dibutuhkan pemodelan yang tepat agar keputusan-keputusan strategis dapat dibuat.
-
-Dalam memudahkan penyelesaian persamaan diferensial, telah dikembangkan beberapa metode yang dikembangkan. *Runge-Kutta Fourth Order* dan *Euler Method* merupakan beberapa metode penyelesaian persamaan diferensial dengan IVP atau *Initial Value Problem* dimana dibutuhkan nilai awal untuk menggunakan metode ini. Jika dibandingkan dari segi efektivitas untuk pemodelan SIR yang merupakan persamaa diferensial orde 1, *Euler Method* memiliki tingkat efektivitas yang lebih baik daripada *Runge-Kutta Fourth Order*. Ungkapan yang digunakan dalam metode *Euler Method* adalah sebagai berikut [4].
+Dalam memudahkan penyelesaian persamaan diferensial, telah dikembangkan beberapa metode yang dikembangkan. *Runge-Kutta Fourth Order* dan *Euler Method* merupakan beberapa metode penyelesaian persamaan diferensial dengan IVP atau *Initial Value Problem* dimana dibutuhkan nilai awal untuk menggunakan metode ini. Jika dibandingkan dari segi efektivitas untuk pemodelan SIR yang merupakan persamaa diferensial orde 1, *Euler Method* memiliki tingkat efektivitas yang lebih baik daripada *Runge-Kutta Fourth Order*. Ungkapan yang digunakan dalam metode *Euler Method* adalah sebagai berikut [3].
 
 	\begin{equation}
 	\frac{dy}{dt} = f{t,y}, y(t_0)=y_0
@@ -718,12 +716,25 @@ Dalam memudahkan penyelesaian persamaan diferensial, telah dikembangkan beberapa
 	\begin{equation}
 	y_{t+1} = y_{t} + hf(x,y)
 	\end{equation}
-	
+
+Pemodelan menggunakan persamaan diferensial ini memiliki kelemahan yaitu karena sensitifitas parameternya dan juga penentuan nilai awal menyebabkan kesalahan dalam penentuan nilai dapat menyebabkan kesalahan dalam melakukan prediksi [4]. Kesulitan dalam penentuan nilai parameter disebabkan karena proses yang terjadi merupakan proses stikasti serta parameter laju transmisi dipengaruhi oleh faktor-faktor lain diluar asumsi yang digunakan [5]. Apalagi pada kondisi seperti dibutuhkan pemodelan yang tepat agar keputusan-keputusan strategis dapat dibuat.
+
+Pemanfaatan *Deep Neural Network* menjadi salah satu solusi yang dapat dimanfaatkan dalam optimalisasi model SIR dengan melakukan *learning* terhadap parameter-parameter yang akan digunakan dalam persamaan diferensial dari data yang sudah direkam sehingga prediksi pemodelan menjadi lebih baik [6].
 
 ### c Metode
+
+*Neural Network* disusun dari komponen *input*, *perceptron layer*, dan *output* dimana kaitan antar komponennya merupakan proses menggunakan operator parametrik linear. Untuk *input* dibutuhkan data yang cukup dan relevan dengan fenomena yang terjadi sehingga *output* yang diharapkan berupa nilai dari parameter-paramater pemodelan yang dibutuhkan dan dapat dilakukan pemodelan serta prediksi yang lebih efektif dan optimal dari persebaran pandemik.
+
 ### d Hasil dan Diskusi
+
+Hasil yang diharapkan dari penggunaan *neural network* dalam optimasi nilai parameter dalam pemodelan SIR adalah prediksi yang lebih baik sehingga keputusan serta rencana strategis dapat dibentuk dan dilaksanakan sesegera mungkin. (Raissi et al, 2019) melakukan pemodelan SIR menggunakan nilai parameter yang dioptimalisasi menggunakan *neural network* dan mendapatkan hasil yang mengindikasikan bahwa metode estimasi parameter ini merupakan metode yang dapat diandalkan.
+
+Meskipun penggunaan *neural network* merupakan suatu kemajuan dalam prediksi penyebaran pandemik, namun limitasi dari penggunaan *neural network* adalah data. Dibutuhkan jumlah data yang cukup agar hasil dari proses *learning* sesuai dengan fenomena yang terjadi. Hal ini menyebabkan penggunaan *neural network* dalam prediksi penyebaran pandemik tidak dapat diandalkan pada periode awal penyebaran. Selain itu kurangnya data karena adanya kasus pasien yang tidak melapor, jenis penyakit yang bersifat asimptomatik, dan strategi pengecekan yang kurang efisien dibandingkan laju penyebaran dapat menyebabkan prediksi tidak sesuai dengan keadaan nyata. Sehingga perlu adanya kerjasama yang baik antara pihak penyedia data dan pihak yang memodelkan agar didapatkan hasil dengan reliabilitas yang baik.
+
 ### e Referensi
 1. Ihsanuddin, Ramadhan, A., Haryanti, P.S. (2020). *Update 1 Mei: Pasien Positif Covid-19 Mencapai 10.551*. <https://nasional.kompas.com/read/2020/05/01/15473211/update-1-mei-pasien-positif-covid-19-mencapai-10551>, diakses pada tanggal 1 Maret 2020.
-2. Kermack, W. O., McKendrick, A. G. (1927). *A Contribution to the Mathematical Theory of Epidemics*. Proceedings of the The Royal Society of London. DOI:700-721
-3. Lloyd, A. L. (2009). *Sensitivity of Model-Based Epidemiological Parameter Estimation to Model Assumptions*. Springer. DOI:10.1007/978-90-481-2313-1-6
-4. Lanlege, D. I. et al. (2018). *Comparison of Euler and Runge-Kutta methods in solving ordinary differential equation of order two and four*. Leonardo Journal of Sciences. ISSN:1583-0233
+2. Kermack, W. O., McKendrick, A. G. (1927). *A Contribution to the Mathematical Theory of Epidemics*. Proceedings of the The Royal Society of London. DOI:700-721.
+3. Lanlege, D. I. et al. (2018). *Comparison of Euler and Runge-Kutta methods in solving ordinary differential equation of order two and four*. Leonardo Journal of Sciences. ISSN:1583-0233.
+4. Lloyd, A. L. (2009). *Sensitivity of Model-Based Epidemiological Parameter Estimation to Model Assumptions*. Springer. DOI:10.1007/978-90-481-2313-1-6.
+5. Anderson, R. M. May, R. M. (1992). *Infectious diseases of humans: Dynamics and control*. Oxford University Press.
+6. Raissi, M. et al. (2019). *On parameter estimation approaches for predicting disease transmission through optimization, deep learning and statistical inference methods*. Letters in Biomathematics. DOI:10.1080/23737867.2019.1676172 
