@@ -686,7 +686,44 @@ Dari hasil fitness beberapa iterasi kromosom didapat 2 kromosom yang paling mend
 
 ## Nomor 5 | Research Based Learning
 ### a Tujuan
+
+Optimalisasi pemodelan pandemik berdasarkan model SIR dengan Artificial Neural Network.
+
 ### b Rumusan Masalah
+
+Dunia sedang menghadapi masalah serius terkait adanya pandemik virus SARS-CoV-2 atau dikenal luas dengan istilah Covid 19 atau virus Corona. Di Indonesia, per 1 Maret 2020, tercatat sudah 10.551 orang terjangkit virus Corona, dengan total kematian 800 orang, dan total pasien yang sembuh sebanyak 1.591 orang [1]. Selain penanganan medis dilakukan, sejumlah akademisi melakukan pemodelan terkait dengan penyebaran pandemik ini. Pemodelan yang paling sering digunakan adalah model SIR dimana pada model ini terdapat tiga kelompok yaitu *Susceptible*, *Infected*, dan *Recovered*. Model ini dikembangkan dan diungkapkan dalam bentuk persamaan diferensial sebagai berikut [2].
+
+	\begin{equation}
+	\frac{dS(t)}{dt} = -{\beta}S(t)I(t)
+	\end{equation}
+
+	\begin{equation}
+	\frac{dI(t)}{dt} = {\beta}S(t)I(t) - {\gamma}R(t)
+	\end{equation}
+
+	\begin{equation}
+	\frac{dR(t)}{dt} = {\gamma}R(t)
+	\end{equation}
+	
+	Dimana ${\beta}$ menunjukkan laju penyebaran dan ${\gamma}$ menunjukkan laju penyembuhan.
+
+Persamaan diferensial ini memiliki kelemahan yaitu karena sensitifitas parameternya menyebabkan kesalahan dalam penentuan nilai dapat menyebabkan kesalahan dalam melakukan prediksi [3]. Apalagi pada kondisi seperti dibutuhkan pemodelan yang tepat agar keputusan-keputusan strategis dapat dibuat.
+
+Dalam memudahkan penyelesaian persamaan diferensial, telah dikembangkan beberapa metode yang dikembangkan. *Runge-Kutta Fourth Order* dan *Euler Method* merupakan beberapa metode penyelesaian persamaan diferensial dengan IVP atau *Initial Value Problem* dimana dibutuhkan nilai awal untuk menggunakan metode ini. Jika dibandingkan dari segi efektivitas untuk pemodelan SIR yang merupakan persamaa diferensial orde 1, *Euler Method* memiliki tingkat efektivitas yang lebih baik daripada *Runge-Kutta Fourth Order*. Ungkapan yang digunakan dalam metode *Euler Method* adalah sebagai berikut [4].
+
+	\begin{equation}
+	\frac{dy}{dt} = f{t,y}, y(t_0)=y_0
+	\end{equation}
+	
+	\begin{equation}
+	y_{t+1} = y_{t} + hf(x,y)
+	\end{equation}
+	
+
 ### c Metode
 ### d Hasil dan Diskusi
 ### e Referensi
+1. Ihsanuddin, Ramadhan, A., Haryanti, P.S. (2020). *Update 1 Mei: Pasien Positif Covid-19 Mencapai 10.551*. <https://nasional.kompas.com/read/2020/05/01/15473211/update-1-mei-pasien-positif-covid-19-mencapai-10551>, diakses pada tanggal 1 Maret 2020.
+2. Kermack, W. O., McKendrick, A. G. (1927). *A Contribution to the Mathematical Theory of Epidemics*. Proceedings of the The Royal Society of London. DOI:700-721
+3. Lloyd, A. L. (2009). *Sensitivity of Model-Based Epidemiological Parameter Estimation to Model Assumptions*. Springer. DOI:10.1007/978-90-481-2313-1-6
+4. Lanlege, D. I. et al. (2018). *Comparison of Euler and Runge-Kutta methods in solving ordinary differential equation of order two and four*. Leonardo Journal of Sciences. ISSN:1583-0233
