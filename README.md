@@ -65,3 +65,17 @@ Lampiran :
 
 ![alt text](https://user-images.githubusercontent.com/64627989/80785039-35688e80-8ba9-11ea-8bea-c9043693cabd.png)
 ## Poin B
+	Dari persamaan 9 dan 10 pada Poin A terdapat beberapa suku yang sama.
+	<br/><br/>
+	1. Suku $x''$ dan $y''$
+	<br/><br/>
+	Suku ini merupakan variabel percepatan dari sistem pada koordinat $x$ dan $y$. Pada persamaan sumbu $y$ terdapat variabel $g$ dan $gy^2/l^2$, sedangkan pada sumbu $x$ terdapat variabel $gxy/l^2$ dimana suku ini muncul karena perhitungan persamaan gerak yang relatif terhadap pusat $O(0,0)$.
+	<br/><br/>
+	2. Suku $(x'^2+y'^2)/l^2$
+	<br/><br/>
+	Suku ini menjelaskan adanya percepatan sentripetal pada masing-masing sumbu $x$ dan $y$.
+	<br/><br/>
+	3. Suku $3{\eta}{\pi}D/m$
+	<br/><br/>
+	Suku ini menjelaskan adanya faktor hambatan atau viskositas $\eta$ yang muncul pada sistem.
+## Poin C
