@@ -196,3 +196,105 @@ Terdapat enam orang anggota pada kelompok ini dengan fraksi kontribusinya pada p
 	\end{equation}
 
 ### Poin C
+
+Solusi numerik menggunakan metode Euler dengan membandingkan persamaan 1 Poin A (solusi persamaan umum) dan persamaan 1 Poin B (solusi persamaan khusus - aproksimasi sudut kecil).
+
+1. Sudut 5 derajat dari t = 0 sampai t = 4.95
+![alt text](https://user-images.githubusercontent.com/64627989/80800604-12070900-8bd4-11ea-86e9-02e8f6688781.png)
+
+Untuk memperjelas perbandingan, kurva diperbesar dan didapatkan hasil sebagai berikut.
+![alt text](https://user-images.githubusercontent.com/64627989/80800618-19c6ad80-8bd4-11ea-9d4f-678fb34718df.png)
+
+2. Sudut 30 derajat dari t = 0 sampai t = 4.95
+![alt text](https://user-images.githubusercontent.com/64627989/80800633-23e8ac00-8bd4-11ea-8c97-9f773cb37eae.png)
+
+### Poin D
+Program dibuat dan dapat dijalankan pada [http://cpp.sh/](http://cpp.sh/).
+
+```C++
+// Example program
+#include <iostream>
+#include <string>
+#include <math.h>
+
+using namespace std;
+
+int main()
+{
+  float theta;
+  
+  cout << "Masukkan nilai theta (dalam derajat) : ";
+  cin >> theta;
+  
+  theta = (theta/180)*M_PI;
+    
+  //variabel sistem
+  float g = 9.8;
+  float l = 2.0;
+  
+  //jumlah data dari t = 0 sampai t = 5 dengan interval 1e-2
+  int n = 100;
+  
+  //interval penambahan
+  float h = 5.00/n;
+  float t[n];
+  
+  cout << "WAKTU" << endl;
+  
+  for (int i = 0; i < n; i++){
+      t[i] = h*i;
+      cout << t[i] << endl;
+  }
+
+  //solusi umum (theta'' + (g/l)sin(theta)=0)
+  float v1[n];  //array kecepatan
+  float th1[n];  //array posisi
+  
+  for (int i = 0; i < n; i++){
+      v1[i] = 0;
+      th1[i] = 0;
+  }
+  
+  //Kondisi awal v(0) = 0, theta(0)=theta0
+  th1[0] = theta;
+  
+  cout << endl;
+  cout << "NILAI POSISI SOLUSI UMUM" << endl;
+  cout << endl;
+
+  
+  for (int i = 1; i <= n; i++){
+      v1[i] = v1[i-1] + h*(-(g/l)*sin(th1[i-1]));
+      th1[i] = th1[i-1] + h*v1[i-1];
+
+      //output
+      cout << th1[i] << endl;
+  }
+  
+  //solusi khusus (theta'' + (g/l)theta=0)
+  float v2[n];  //array kecepatan
+  float th2[n];  //array posisi
+  
+  for (int i = 0; i < n; i++){
+      v2[i] = 0;
+      th2[i] = 0;
+  }
+  
+  //Kondisi awal v(0) = 0, theta(0)=theta0
+  th2[0] = theta;
+  
+  cout << endl;
+  cout << "NILAI POSISI SOLUSI KHUSUS" << endl;
+  cout << endl;
+  
+  for (int i = 1; i <= n; i++){
+      v2[i] = v2[i-1] + h*(-(g/l)*(th2[i-1]));
+      th2[i] = th2[i-1] + h*v2[i-1];
+      
+      //output
+      cout << th2[i] << endl;
+  }
+  
+  
+}
+```
