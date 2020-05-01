@@ -362,6 +362,33 @@ int main()
 
 ## Nomor 3 | Jaringan Syaraf Tiruan dengan Aplikasi TensorFlow
 
+### Poin A
+Data yang disajikan pada soal pertama-tama dibentuk plot menggunakan excel. Didapatkan data yang terpisah pada sumbu y sehingga dibutuhkan hanya satu inputan yang memisahkan data secara vertikal. Karena data terpisah sudah linear, tidak membutuhkan hidden layer sehingga notasi yang digunakan adalah '(1-1)'.
+
+**Lampiran :**
+1. Output ANN Notasi Struktur 3A
+
+![alt text](https://user-images.githubusercontent.com/64627989/80807851-674d1580-8be8-11ea-87dd-88b0458467fb.png)
+
+### Poin B
+Data yang disajikan pada soal pertama-tama dibentuk plot menggunakan excel. Didapatkan data yang terpisah melalui garis diagonal sehingga dibutuhkan dua input. Untuk memperbaik pemisahan data, digunakan hidden layer sedemikian sehingga notasinya adalah '(2-5-3-2-1 )'.
+
+**Lampiran :**
+1. Output ANN Notasi Struktur 3B
+
+![alt text](https://user-images.githubusercontent.com/64627989/80807858-6ddb8d00-8be8-11ea-93b4-e61d11dba1a2.png)
+
+### Poin C
+Data yang disajikan pada soal pertama-tama dibentuk plot menggunakan excel. Didapatkan data yang terpisah secara sentris dengan kelas bernilai 1 berada di tengah. Digunakan dua input dan hidden layer tambahan sedemikian sehingga notasinya adalah '(2-2-4-2-1)'.
+
+**Lampiran :**
+1. Output ANN Notasi Struktur 3C
+
+![alt text](https://user-images.githubusercontent.com/64627989/80807871-75029b00-8be8-11ea-8da3-e02ca3681427.png)
+
+### Poin D
+Visualisasi data pertama bahwa data terpisah hanya oleh sumbu y sehingga hanya perlu 1 input dan karena pemisah linear maka tidak perlu hidden layer. Untuk data 2, dipisahkan oleh garis miring sehingga kedua sumbu x dan y berpengaruh sehingga diperlukan dua neuron input, diagonal pemisah data perlu ditambah kan hidden layer agar tampilan dapat diperbaik. Sedangkan, untuk data C, diperlukan 2 input dan pemisah harus diwakili oleh tiga boundary sehingga diperlukan hidden layer tambahan. Arsitektur JST yang sesederhana mungkin dibutuhkan karena dalam visualisasi dibutuhkan bentuk yang sederhana, kemudian iterasi yang dilakukan tidak lama dan panjang juga resource yang dibutuhkan. Tapi pada beberapa kasus dengan contoh pada data C, sebenernya bisa didapatkan dengan notasi (2-2-4-1) dengan menggunakan 2 hidden layer. Penambahan hidden layer ketiga untuk mempercepat mendapatkan hasil output, atau mempersedikit iterasi, hal tersebut bisa dibilang lebih sederhana meskipun menambahkan hidden layer. Tapi akibat dari penambahan tersebut tidak berlaku untuk semua kasus.
+
 ## Nomor 4 | Algoritma Genetik Sederhana dengan JS
 
 ### Poin A
