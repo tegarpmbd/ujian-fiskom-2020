@@ -35,7 +35,7 @@
 	sin{\theta}=\frac{x}{l}
 	\end{equation}
 	\begin{equation}
-	cos{\theta}=\frac{y}{l}
+	cos{\theta}=\frac{-y}{l}
 	\end{equation}
 	Menggunakan persamaan viskositas, maka nilai $F_{drag}$ diungkapkan sebagai berikut.
 	\begin{equation}
@@ -46,15 +46,15 @@
 	\\-mx''=-Tsin{\theta}+F_{drag}cos{\theta}
 	\\x''-\frac{(mgcos{\theta}+\frac{mv^2}{l})sin{\theta}}{m}+\frac{(3{\eta}{\pi}D)vcos{\theta}}{m}=0
 	\\x''-gsin{\theta}cos{\theta}-\frac{(\sqrt{x'^2+y'^2})^2}{l}sin{\theta}+\frac{3{\eta}{\pi}D}{m}vcos{\theta}=0
-	\\x''-g\frac{x}{l}\frac{y}{l}-\frac{x'^2+y'^2}{l}\frac{x}{l}+\frac{3{\eta}{\pi}D}{m}x'=0
-	\\x''-\frac{g}{l^2}xy-\frac{1}{l^2}(x'^2+y'^2)x+\frac{3{\eta}{\pi}D}{m}x'=0
+	\\x''+g\frac{x}{l}\frac{y}{l}-\frac{x'^2+y'^2}{l}\frac{x}{l}+\frac{3{\eta}{\pi}D}{m}x'=0
+	\\x''+\frac{g}{l^2}xy-\frac{1}{l^2}(x'^2+y'^2)x+\frac{3{\eta}{\pi}D}{m}x'=0
 	\end{equation}
 	Sedangkan pada sumbu $x$ dan hubungan sebelumnya didapatkan persamaan sebagai berikut.
 	\begin{equation}
 	\\my''=-mg+Tcos{\theta}+F_{drag}sin{\theta}
 	\\y''=-g+\frac{(mgcos{\theta}+\frac{mv^2}{l})}{m}cos{\theta}+\frac{(3{\eta}{\pi}D)}{m}vsin{\theta}
 	\\y''-gcos^2{\theta}-\frac{(\sqrt{x'^2+y'^2})^2}{l}cos{\theta}+\frac{(3{\eta}{\pi}D)}{m}y'=-g
-	\\y''-g\frac{y^2}{l^2}-\frac{1}{l^2}(x'^2+y'^2)y+\frac{(3{\eta}{\pi}D)}{m}y'=-g
+	\\y''-g\frac{y^2}{l^2}+\frac{1}{l^2}(x'^2+y'^2)y+\frac{(3{\eta}{\pi}D)}{m}y'=-g
 	\end{equation}
 **Lampiran :**
 1. Diagram gaya sistem pada koordinat kartesian.
@@ -83,11 +83,21 @@
 	<br/><br/>
 	Untuk sumbu $x$ :
 	\begin{equation}
-	\\x''-\frac{g}{l^2}xy-\frac{1}{l^2}(x'^2+y'^2)x=0
+	\\x''+\frac{g}{l^2}xy-\frac{1}{l^2}(x'^2+y'^2)x=0
 	\end{equation}
 	Untuk sumbu $y$ :
 	\begin{equation}
-	\\y''-g\frac{y^2}{l^2}-\frac{1}{l^2}(x'^2+y'^2)y=-g
+	\\y''-g\frac{y^2}{l^2}+\frac{1}{l^2}(x'^2+y'^2)y=-g
 	\end{equation}
 	Terlihat bahwa kebergantungan sistem hanya karena percepatan sentripetal yang muncul akibat osilasi yang lintasannya melingkar.
 ## Poin D
+	Untuk kasus tanpa hambatan maka dapat digunakan persamaan (1) dan (2) pada Poin C untuk persamaan gerak sistem. Sedangkan untuk penggunaan simpangan kecil maka terdapat aproksimasi yang digunakan yaitu $y=l$ dan $x{\ll}l$. Sehingga persamaan (1) dan (2) pada Poin C dapat ditulis sebagai berikut.
+	<br/><br/>
+	Untuk sumbu $x$ :
+	\begin{equation}
+	\\x''+g\frac{x}{l}-\frac{1}{l^2}(x'^2+y'^2)x=0
+	\end{equation}
+	Untuk sumbu $y$ :
+	\begin{equation}
+	\\y''+\frac{x'^2+y'^2}{l}=0
+	\end{equation}
