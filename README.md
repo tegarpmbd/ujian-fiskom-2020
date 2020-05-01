@@ -393,24 +393,8 @@ Visualisasi data pertama bahwa data terpisah hanya oleh sumbu y sehingga hanya p
 
 ### Poin A
 ```javascript
-/*
-	ga.js
-	Simple genetic algoritm (GA)
-	
-	Sparisoma Viridi | https://github.com/dudung/jsxPhys
-	
-	20200501
-	1255 Create this program.
-	1318 Cancel the use of online compiler [1].
-	
-	Refrences
-	1. https://jsconsole.com/ [20200501]
-*/
-
-
 // Execute main funtion
 main();
-
 
 // Define main function
 function main() {
@@ -420,7 +404,6 @@ function main() {
 	getValues(p);
 	
 }
-
 
 // Get interpretation of position and group from chromosome
 function getValues() {
@@ -434,9 +417,18 @@ function getValues() {
 	console.log("x = ", xs);
 	console.log("y = ", ys);
 	console.log("g = ", gs);
-	
 }
 ```
+
+Output dari program ini adalah sebagai berikut.
+
+```
+p = 0010110
+x = 001
+y = 011
+g = 0
+```
+
 
 ### Poin B
 
